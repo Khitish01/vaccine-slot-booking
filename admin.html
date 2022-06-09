@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <h1 style="text-align: center">Registerd List</h1>
+    <button type="menu" onclick="showData()" class="btn">Get Data</button>
+   
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email Id</th>
+                    <th>Age</th>
+                    <th>phone</th>
+                    <th>Aadhar Card</th>
+                    <th>Address</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td class="col-sm-4" id="full__name"></td>
+                    <td class="col-sm-4" id="email"></td>
+                    <td class="col-sm-4" id="age"></td>
+                    <td class="col-sm-4" id="phone"></td>
+                    <td class="col-sm-4" id="adhar"></td>
+                    <td class="col-sm-4" id="address"></td>
+                    <td class="col-sm-4" id="date"></td>
+                </tr>
+                <div id="showUsers"></div>
+            </thead>
+        </table>
+        <script src="./admin.js"></script>
+</body>
+
+</html>
